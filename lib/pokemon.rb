@@ -30,6 +30,7 @@ class Pokemon
     end
 
     def self.find(num, database)
+        binding.pry
         Pokemon.all.find do |pk|
             if pk.id = num
              Pokemon.save(pk.name, pk.type, database)
