@@ -30,7 +30,7 @@ class Pokemon
         binding.pry
         self.all.find do |pk|
             pk.id = num
-    end
+        end
         #      Pokemon.save(pk.name, pk.type, database)
         #      end
         #  end
