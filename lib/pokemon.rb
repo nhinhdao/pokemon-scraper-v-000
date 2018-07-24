@@ -22,7 +22,7 @@ class Pokemon
     # it "alters Pikachu's hp to 59" do
     #   pikachu.alter_hp(59, @db)
     #   expect(Pokemon.find(1, @db).hp).to eq(59)
-
+database.execute("select hp from pokemon")
     # end
 
     def self.save(name, type, database)
