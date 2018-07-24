@@ -25,8 +25,8 @@ class Pokemon
     end
 
     def self.find(num, database)
-        binding.pry
         a = database.execute("select * from pokemon where id = ?", num)
+            binding.pry
         self.new(id: a[0][0], name: a[0][1], type: a[0][2], hp: nil, db: database)
 
     end
