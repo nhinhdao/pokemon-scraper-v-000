@@ -26,7 +26,8 @@ class Pokemon
 
     def self.find(num, database)
         a = database.execute("select * from pokemon where id = ?", num)
-        self.new(id: a[0][0], name: a[0][1], type: a[0][2], db: database)
+        self.new(id: a[0][0], name: a[0][1], type: a[0][2], hp: 60, db: database)
+
     end
         # Pokemon.save(a[0][0], a[0][1], database)
         # binding.pry
