@@ -16,13 +16,13 @@ class Pokemon
 
     def alter_hp(hpk, database)
         binding.pry
-        # database.execute("UPDATE pokemon set hp = (?) where name = (?)", hpk, self.name)
-        database.execute("UPDATE pokemon set hp = #{hpk.to_i} where name = '#{self.name}'")
+        database.execute("UPDATE pokemon set hp = (?) where name = (?)", hpk, self.name)
+        # database.execute("UPDATE pokemon set hp = #{hpk.to_i} where name = '#{self.name}'")
     end
     # it "alters Pikachu's hp to 59" do
     #   pikachu.alter_hp(59, @db)
     #   expect(Pokemon.find(1, @db).hp).to eq(59)
-    # database.execute("select hp from pokemon")
+    # database.execute("select * from pokemon")
     # end
 
     def self.save(name, type, database)
