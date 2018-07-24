@@ -29,7 +29,7 @@ class Pokemon
         # Pokemon.save(a[0][0], a[0][1], database)
         binding.pry
         Pokemon.all.find do |pk|
-            pk.name = a[0][0]
+            pk.id = num
     end
         #      Pokemon.save(pk.name, pk.type, database)
         #      end
