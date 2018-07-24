@@ -27,7 +27,7 @@ class Pokemon
     def self.find(num, database)
         a = database.execute("select name, type from pokemon where id = ?", num)
         Pokemon.save(a[0][0], a[0][1], database)
-        binding.pry
+        # binding.pry
         # Pokemon.all.find do |pk|
         #     if pk.id = num
         #      Pokemon.save(pk.name, pk.type, database)
