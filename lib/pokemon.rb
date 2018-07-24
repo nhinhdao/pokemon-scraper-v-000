@@ -14,9 +14,9 @@ class Pokemon
         @@all << self
     end
 
-    def alter_hp(hpk, database)
+    def alter_hp(hp, database)
         # binding.pry
-        database.execute("UPDATE pokemon set hp = ? where name = ?", hpk, self.name)
+        database.execute("UPDATE pokemon set hp = ? where name = ?", hp, self.name)
     end
     # database.execute("select * from pokemon")
 
