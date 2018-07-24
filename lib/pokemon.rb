@@ -36,6 +36,7 @@ class Pokemon
              Pokemon.save(pk.name, pk.type, database)
              end
          end
+         database.find("Pikachu")
     end
 
     def self.all
